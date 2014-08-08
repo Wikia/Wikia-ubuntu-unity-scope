@@ -1,0 +1,15 @@
+{
+    "name": "com.ubuntu.developer.knitzsche.scope-wikia",
+    "description": "Wikia Scope",
+    "framework": "ubuntu-sdk-14.04-qml-dev1",
+    "architecture": "all",
+    "title": "Wikia Scope",
+    "hooks": {
+        "wikia": {
+            "apparmor": "wikia.json",
+            "scope": "wikia"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Kyle Nitzsche <kyle.nitzsche@canonical.com>"
+}

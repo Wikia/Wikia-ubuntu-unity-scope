@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11 -pedantic -Wall -Wextra    CMakeFiles/simpletest.dir/simpletest.cpp.o  -o simpletest -rdynamic 

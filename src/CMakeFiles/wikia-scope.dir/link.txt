@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -std=c++11 -pedantic -Wall -Wextra   -shared -Wl,-soname,libwikia-scope.so -o libwikia-scope.so CMakeFiles/wikia-scope.dir/wikia-preview.cpp.o CMakeFiles/wikia-scope.dir/wikia-query.cpp.o CMakeFiles/wikia-scope.dir/wikia-scope.cpp.o /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.3.0 -lunity-scopes -lunity-api /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.3.0 
