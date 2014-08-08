@@ -1,2 +1,2 @@
-/var/www/ubuntu-sdk-tutorials/scopes/wikia/src/CMakeFiles/wikia-scope.dir
 /var/www/ubuntu-sdk-tutorials/scopes/wikia/test/CMakeFiles/simpletest.dir
+/var/www/ubuntu-sdk-tutorials/scopes/wikia/src/CMakeFiles/wikia-scope.dir

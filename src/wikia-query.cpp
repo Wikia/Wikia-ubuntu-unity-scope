@@ -40,6 +40,7 @@ const static std::string CATEGORY_TEMPLATE =
 }
 
 const QString BASE_URI = "http://www.wikia.com/wikia.php?controller=SearchApi&method=getCrossWiki&expand=1&query=%1";
+const QString IMAGE_PLACEHOLDER_URI = "http://slot1.images.wikia.nocookie.net/__cb1407464990/common/extensions/wikia/WAMPage/images/wam-imgplaceholder.png";
 
 WikiaQuery::WikiaQuery(CannedQuery const& query, SearchMetadata const& metadata) :
     SearchQueryBase(query, metadata)
@@ -96,6 +97,10 @@ void WikiaQuery::run(unity::scopes::SearchReplyProxy const& reply)
                         auto image = resJ["image"].toString();
                         auto desc = resJ["desc"].toString();
 
+                        if ( image == "" ) {
+                            image = IMAGE_PLACEHOLDER_URI;
+                        }
+
                         //set our CateogroisedResult object with out searchresults values
                         catres.set_uri(uri.toStdString());
                         catres.set_dnd_uri(uri.toStdString());
@@ -106,7 +111,7 @@ void WikiaQuery::run(unity::scopes::SearchReplyProxy const& reply)
                         //They may be displayed in the Preview phase. See wikia-preview.cpp and
                         //search for 'description' to see how
                         catres["description"] = Variant(desc.toStdString());
-//                        catres["artist"] = Variant(artist.toStdString());
+                        catres["artist"] = Variant(uri.toStdString());
 
                         //push the categorized result to the client
                         if (!reply->push(catres)) {

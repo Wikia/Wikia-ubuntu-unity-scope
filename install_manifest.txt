@@ -1,0 +1,2 @@
+/usr/local/lib/x86_64-linux-gnu/unity-scopes/wikia-scope/libwikia-scope.so
+/usr/local/lib/x86_64-linux-gnu/unity-scopes/wikia-scope/wikia-scope.ini

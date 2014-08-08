@@ -71,7 +71,6 @@ void WikiaPreview::run(unity::scopes::PreviewReplyProxy const& reply)
     builder.add_tuple({
             {"id", Variant("open")},
             {"label", Variant("Open")},
-            {"uri", Variant(uri_)} // uri set, this action will be handled by the Dash
         });
     w_actions.add_attribute_value("actions", builder.end());
 

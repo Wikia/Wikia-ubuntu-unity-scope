@@ -2,6 +2,7 @@
 #define DEMOPREVIEW_H
 
 #include <unity/scopes/PreviewQueryBase.h>
+#include <unity/scopes/Result.h>
 
 class WikiaPreview : public unity::scopes::PreviewQueryBase
 {

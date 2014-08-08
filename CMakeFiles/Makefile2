@@ -74,7 +74,7 @@ src/preinstall:
 src/CMakeFiles/wikia-scope.dir/all:
 	$(MAKE) -f src/CMakeFiles/wikia-scope.dir/build.make src/CMakeFiles/wikia-scope.dir/depend
 	$(MAKE) -f src/CMakeFiles/wikia-scope.dir/build.make src/CMakeFiles/wikia-scope.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /var/www/ubuntu-sdk-tutorials/scopes/wikia/CMakeFiles  1 2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report /var/www/ubuntu-sdk-tutorials/scopes/wikia/CMakeFiles  2 3 4
 	@echo "Built target wikia-scope"
 .PHONY : src/CMakeFiles/wikia-scope.dir/all
 
@@ -139,7 +139,7 @@ test/preinstall:
 test/CMakeFiles/simpletest.dir/all:
 	$(MAKE) -f test/CMakeFiles/simpletest.dir/build.make test/CMakeFiles/simpletest.dir/depend
 	$(MAKE) -f test/CMakeFiles/simpletest.dir/build.make test/CMakeFiles/simpletest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /var/www/ubuntu-sdk-tutorials/scopes/wikia/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /var/www/ubuntu-sdk-tutorials/scopes/wikia/CMakeFiles  1
 	@echo "Built target simpletest"
 .PHONY : test/CMakeFiles/simpletest.dir/all
 
